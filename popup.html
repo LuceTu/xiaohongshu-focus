@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小红书纯净版</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 头部标题 / Header -->
+    <header class="header">
+      <h1 class="title">小红书纯净版</h1>
+      <p class="subtitle">Xiaohongshu Focus</p>
+    </header>
+
+    <!-- 功能开关列表 / Feature Toggles -->
+    <div class="settings-list">
+
+      <!-- 1. 主页推荐内容隐藏 -->
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-name">主页推荐内容隐藏</span>
+          <span class="setting-desc">Hide feed</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-feed" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 2. 「猜你想搜」隐藏 -->
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-name">「猜你想搜」隐藏</span>
+          <span class="setting-desc">Hide search suggestions</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-search-suggest" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 3. 通知小红点隐藏 -->
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-name">通知小红点隐藏</span>
+          <span class="setting-desc">Hide notification badge</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-notification-badge" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 4. 通知入口隐藏 -->
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-name">通知入口隐藏</span>
+          <span class="setting-desc">Hide notification button</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-notification-entry">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 5. 页面图片隐藏 -->
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-name">页面图片隐藏</span>
+          <span class="setting-desc">Hide all images</span>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-images">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- 底部 / Footer -->
+    <footer class="footer">
+      <p class="copyright">© 2024-2026 Xiaohongshu Focus</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

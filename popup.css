@@ -1,0 +1,205 @@
+/**
+ * popup.css - Dashboard样式 / Dashboard Styles
+ *
+ * 设计说明 / Design Notes:
+ * - 采用小红书品牌色 #ff2442 作为主色调 / Uses XHS brand color #ff2442 as primary
+ * - 现代简洁的卡片式设计 / Modern and clean card-based design
+ * - 响应式布局，适配不同屏幕 / Responsive layout for different screens
+ */
+
+/* ========== 基础样式重置 / Base Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== 主体样式 / Body Styles ========== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+               'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: linear-gradient(135deg, #fff5f7 0%, #fff 100%);
+  min-width: 320px;
+  color: #333;
+}
+
+/* ========== 容器样式 / Container Styles ========== */
+.container {
+  padding: 20px;
+  max-width: 360px;
+}
+
+/* ========== 头部样式 / Header Styles ========== */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ffe0e5;
+}
+
+/* 主标题 / Main Title */
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff2442;
+  margin-bottom: 4px;
+}
+
+/* 副标题 / Subtitle */
+.subtitle {
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+/* ========== 设置列表样式 / Settings List Styles ========== */
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 单个设置项 / Single Setting Item */
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 36, 66, 0.08);
+  transition: all 0.2s ease;
+}
+
+.setting-item:hover {
+  box-shadow: 0 4px 12px rgba(255, 36, 66, 0.12);
+  transform: translateY(-1px);
+}
+
+/* 设置信息区域 / Setting Info Area */
+.setting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  margin-right: 12px;
+}
+
+/* 设置名称 / Setting Name */
+.setting-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 设置描述 / Setting Description */
+.setting-desc {
+  font-size: 11px;
+  color: #999;
+  line-height: 1.4;
+}
+
+/* ========== 开关样式 / Toggle Switch Styles ========== */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+/* 隐藏原生checkbox / Hide native checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* 滑块背景 / Slider Background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e0e0;
+  transition: all 0.3s ease;
+  border-radius: 26px;
+}
+
+/* 滑块圆点 / Slider Circle */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 开启状态 / Active State */
+.toggle input:checked + .slider {
+  background: linear-gradient(135deg, #ff2442 0%, #ff6b7a 100%);
+}
+
+/* 开启状态滑块位置 / Active State Slider Position */
+.toggle input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+/* 焦点状态 / Focus State */
+.toggle input:focus + .slider {
+  box-shadow: 0 0 0 3px rgba(255, 36, 66, 0.2);
+}
+
+/* ========== 底部样式 / Footer Styles ========== */
+.footer {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #ffe0e5;
+  text-align: center;
+}
+
+/* 联系方式 / Contact */
+.contact {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* 版权信息 / Copyright */
+.copyright {
+  font-size: 10px;
+  color: #ccc;
+}
+
+/* ========== 动画效果 / Animation Effects ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.3s ease;
+}
+
+/* ========== 禁用状态样式 / Disabled State Styles ========== */
+.setting-item.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.setting-item.disabled .slider {
+  cursor: not-allowed;
+}
