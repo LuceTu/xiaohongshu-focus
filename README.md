@@ -46,13 +46,13 @@
 2. 在弹出的控制面板中，根据需要开启/关闭各项功能
 3. 刷新小红书页面，即可看到效果
 
-## 🛠️ 技术栈
+## 技术栈
 
 - Vanilla JavaScript (ES6+)
 - Chrome Extension Manifest V3
 - Chrome Storage API
 
-## 📝 更新日志
+## 更新日志
 
 ### v1.0.0 (2025-12-25 🎄)
 -  首个正式版本发布
@@ -162,7 +162,7 @@ Issues and Pull Requests are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
 
@@ -173,7 +173,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ##  Support
 
-If this project helps you, please consider:❤️
+If this project helps you, please consider:
 -  Star this repository
 -  Report bugs or suggest features
 -  [Buy me a bagal](https://ko-fi.com/ishidev) 
