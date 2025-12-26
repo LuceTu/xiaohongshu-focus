@@ -3,7 +3,7 @@
 > 让小红书网页端回归纯净，专注搜索与内容  
 > Block distractions on Xiaohongshu (Rednote) Web, focus on what matters.
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kcpdiafbdnphkbkpaplphnlfkknojfdo?label=Chrome%20Web%20Store)](链接待更新)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kcpdiafbdnphkbkpaplphnlfkknojfdo?label=Chrome%20Web%20Store)](https://chromewebstore.google.com/detail/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%BA%AF%E5%87%80%E7%89%88-xiaohongshu-focus/kcpdiafbdnphkbkpaplphnlfkknojfdo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [English](#english) | [中文](#chinese)
